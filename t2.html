@@ -2610,7 +2610,7 @@ if(document.getElementById("alum").checked == true){
       var alumper =  document.getElementById("alumper").options[document.getElementById("alumper").selectedIndex].text/100;    
       var pp = pounds * alump * alumper; 
 	 var dd = pp/capacity; // fewer dumps
-	 var mm = glassp * glassper * collecttime;
+	 var mm = alump * alumper * collecttime;
 	 var hh = (routemiles/collecttime) + (mm/60);
 	 var hw = hh*dd; //regular hours
 	 var uw = dd * unloadhours; //unloadhours
